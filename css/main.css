@@ -1,0 +1,144 @@
+/* =========>Global<========== */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #272b30;
+    /* font-family: "Comfortaa", cursive; */
+    font-family: cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link {
+    font-family: cursive;
+    color: var(--text-color) !important;
+    font-weight: 500 !important;
+    line-height: 1.2rem;
+}
+
+:root {
+    --text-color: #ffffff;
+}
+
+/* ==========>scroll bar<========== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1e1d1da2;
+    border-radius: 50px;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(40, 51, 55);
+}
+
+/* =========>Games data section<========== */
+
+header img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+nav {
+    background-color: rgb(58, 73, 123);
+    margin-top: -30px;
+    color: var(--text-color) !important;
+    box-shadow: 0 0 19px 0px rgb(0, 0, 0, 0.7);
+    z-index: 5;
+    border-radius: 20px;
+}
+
+.navbar-brand-img {
+    height: 37px;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.navbar-brand {
+    font-weight: 400 !important;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+    color: #09c !important;
+    transition: all 0.5s;
+}
+
+#gameData .card-body a {
+    font-size: 12px;
+}
+
+#gameData .card {
+    filter: grayscale(0.75);
+    transition: all 0.5s;
+    /* position: relative; */
+}
+
+#gameData .card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+/* =========>Games details section<========== */
+
+.gameDetails {
+    background-color: #27282B;
+    height: 100vh;
+}
+
+/*========> Loader<=========*/
+.loading {
+    position: fixed;
+    z-index: 999;
+    background-color: #272b30e3;
+    inset: 0;
+}
+
+.loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    animation: rotate 1s linear infinite;
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #ff3d00;
+    animation: rotate 0.5s linear infinite reverse;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

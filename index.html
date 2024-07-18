@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/gradient-nerd-logo-template.png">
+    <!-- =========>> link Fonts <<=============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- =========>Games data section<========== -->
+    <section class="games">
+        <header>
+            <img src="images/wraper.png" class="w-100" alt="">
+        </header>
+        <!-- >>>>>Navbar<<<<<<  -->
+        <nav class="navbar navbar-expand-lg  w-md-75 mx-auto position-sticky top-0  col-md-6 col-lg-9">
+            <div class="container d-flex">
+                <h5 class="navbar-brand mb-0 ">
+                    <img src="images/logo-sm.png" class="navbar-brand-img" alt="">
+                    GAME REVIEWS
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 category-list small">
+                        <li class="nav-item">
+                            <a role="button" class="nav-link active text-uppercase" aria-current="page"
+                                data-category="mmorpg">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a role="button" class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="home container my-5">
+            <div class="row g-4 " id="gameData">
+            </div>
+        </main>
+
+    </section>
+    <!-- =========>Games details section<========== -->
+    <section class="gameDetails pt-4 text-light d-none">
+        <div class="container px-3">
+            <header class="d-flex justify-content-between mb-4 py-1">
+                <h3 class="">Details Game</h3>
+                <a class="btn-close btn-close-white" type="button" id="closeBtn"></a>
+            </header>
+            <div class="row" id="gDetails">
+            </div>
+        </div>
+    </section>
+    <!-- ========> Loader<========= -->
+    <div class="loading d-flex justify-content-center align-items-center d-none">
+        <span class="loader"></span>
+    </div>
+
+
+    <!-- =========>link JS files<========== -->
+    <script src="js/main.js" type="module"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
